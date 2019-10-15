@@ -37,7 +37,7 @@ class CircleMaskView: UIView {
         
         let fillLayer = CAShapeLayer()
         fillLayer.path = path.cgPath
-        fillLayer.fillRule = kCAFillRuleEvenOdd
+        fillLayer.fillRule = CAShapeLayerFillRule.evenOdd
         fillLayer.fillColor = UIColor.black.cgColor
         fillLayer.opacity = 1.0
         layer.addSublayer(fillLayer)
